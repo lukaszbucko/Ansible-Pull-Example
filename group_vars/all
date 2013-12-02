@@ -6,4 +6,4 @@ example_variable: "this is an example variable"
 server_hostname: www.example.org
 
 # Docker CMD:
-docker_cmd: "/usr/sbin/nginx -c /etc/nginx/nginx.conf"
+docker_cmd: "/etc/init.d/nginx stop; /usr/sbin/nginx -c /etc/nginx/nginx.conf"
