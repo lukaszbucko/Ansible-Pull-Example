@@ -9,7 +9,6 @@
 
   roles:
     - bootstrap
-    - common
     - nginx
     - php-fpm
     - docker-ansible
