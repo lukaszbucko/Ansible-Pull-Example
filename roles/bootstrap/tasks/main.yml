@@ -9,7 +9,7 @@
 - git: repo={{ example_repo }} dest=/var/www/
 
 - command: "chown -R www-data:www-data /var/www"
-- file: src=/var/www/task.json mode=0777
+- file: path=/var/www/task.json mode=0777
 
 
 
