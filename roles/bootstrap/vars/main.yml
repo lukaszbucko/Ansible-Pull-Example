@@ -1,0 +1,6 @@
+---
+
+hostname: $inventory_hostname
+distro: ${ansible_distribution}
+pkg_mgr: ${ansible_pkg_mgr}
+example_repo: "https://github.com/RaymiiOrg/tasks.php.git"
