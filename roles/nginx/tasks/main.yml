@@ -5,5 +5,5 @@
  
 - file: path=/etc/nginx/sites-enabled/default.conf state=absent
 
-- file: src=/etc/nginx/sites-available/000-default.conf dest=/etc/nginx/sites-available/000-default.conf state=link
+- file: src=/etc/nginx/sites-available/000-default.conf dest=/etc/nginx/sites-enabled/000-default.conf state=link
   notify: restart nginx
