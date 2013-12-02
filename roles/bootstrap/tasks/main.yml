@@ -1,0 +1,22 @@
+---
+## Example for Ansible Pull
+## by Raymii.org
+
+- name: bootstrap example
+  vars:
+    hostname: $inventory_hostname
+    distro: ${ansible_distribution}
+    pkg_mgr: ${ansible_pkg_mgr}
+    example_repo: "https://github.com/RaymiiOrg/tasks.php.git"
+
+  tasks:
+  - file: path=/{{ item }}/ state=directory
+    with_items:
+      - "root/scripts"
+      - "root/src"
+      - "root/tmp"
+      - "var/ansible"
+      - "var/www"
+
+  - git: repo={{ example_repo }} dest=/var/www/example
+

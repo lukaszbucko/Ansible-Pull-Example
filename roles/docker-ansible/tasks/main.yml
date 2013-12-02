@@ -1,0 +1,2 @@
+---
+- template: src=docker-cmd.sh dest=/usr/local/bin/docker-run.sh mode=0755

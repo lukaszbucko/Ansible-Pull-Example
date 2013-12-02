@@ -1,0 +1,5 @@
+---
+- apt: pkg=nginx state=present
+
+- template: src=default.conf dest=/etc/nginx/sites-available/default.conf
+  notify: restart nginx

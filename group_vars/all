@@ -1,0 +1,9 @@
+---
+# Place variables here
+example_variable: "this is an example variable"
+
+# Used by NGINX
+server_hostname: www.example.org
+
+# Docker CMD:
+docker_cmd: "/usr/sbin/nginx /etc/nginx/nginx.conf"

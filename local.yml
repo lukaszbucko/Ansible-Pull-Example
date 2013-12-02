@@ -2,24 +2,14 @@
 ## Example for Ansible Pull
 ## by Raymii.org
 
-- hosts: localhost
+- name: Ansible Example Pull Mode
+  hosts: localhost
   user: root
   connection: local # or ssh or paramiko
 
-  vars:
-    hostname: $inventory_hostname
-    distro: ${ansible_distribution}
-    pkg_mgr: ${ansible_pkg_mgr}
-    example_repo: "https://github.com/RaymiiOrg/simple-nagios-dashboard.git"
-
-  tasks:
-  - file: path=/home/root/{{ item }}/ state=directory
-    with_items:
-      - scripts
-      - src
-      - tmp
-
-  - file: path=/var/www state=directory
-
-  - git: repo={{ example_repo }} dest=/var/www/example
-
+  roles:
+    - bootstrap
+    - common
+    - nginx
+    - php-fpm
+    - docker-ansible
