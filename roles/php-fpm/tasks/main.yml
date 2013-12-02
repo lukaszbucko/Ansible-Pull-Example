@@ -22,8 +22,8 @@
     # - php5-xmlrpc 
     # - php5-xsl
 
-- command: mv /etc/php5/fpm/pool.d/www.conf /etc/php5/fpm//www.disabled creates=/etc/php5/fpm//www.disabled
-  notify: restart php5-fpm
- 
-- template: src=nginx.conf dest=/etc/php5/fpm/pool.d/
-  notify: restart php5-fpm
+# - command: mv /etc/php5/fpm/pool.d/www.conf /etc/php5/fpm//www.disabled creates=/etc/php5/fpm//www.disabled
+#   notify: restart php5-fpm
+#  
+# - template: src=nginx.conf dest=/etc/php5/fpm/pool.d/
+#   notify: restart php5-fpm
