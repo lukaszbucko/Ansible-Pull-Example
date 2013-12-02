@@ -6,4 +6,4 @@ example_variable: "this is an example variable"
 server_hostname: www.example.org
 
 # Docker CMD:
-docker_cmd: "/etc/init.d/lighttpd stop; /etc/init.d/php5-fpm start; /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf"
+docker_cmd: "/usr/sbin/php5-fpm; /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf"

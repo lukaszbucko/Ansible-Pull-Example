@@ -3,6 +3,7 @@
   with_items:
     - php5
     - php5-fpm
+    - php5-cgi
     # - php5-mysql 
     # - php5-curl 
     # - php5-gd 
