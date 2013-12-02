@@ -1,0 +1,6 @@
+---
+- apt: pkg=lighttpd state=present
+
+- template: src=lighttpd.conf dest=/etc/lighttpd/lighttpd.conf
+  notify: restart lighttpd
+ 

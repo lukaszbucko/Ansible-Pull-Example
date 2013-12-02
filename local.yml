@@ -9,6 +9,6 @@
 
   roles:
     - bootstrap
-    - nginx
+    - lighttpd
     - php-fpm
     - docker-ansible
