@@ -26,4 +26,4 @@
   notify: restart php5-fpm
  
 - template: src=nginx.conf dest=/etc/php5/fpm/pool.d/
-  notify: restart php-fpm
+  notify: restart php5-fpm
