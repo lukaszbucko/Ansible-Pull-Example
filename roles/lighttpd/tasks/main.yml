@@ -2,5 +2,5 @@
 - apt: pkg=lighttpd state=present
 
 - template: src=lighttpd.conf dest=/etc/lighttpd/lighttpd.conf
-  notify: restart lighttpd
  
+- file: src=/etc/lighttpd/conf-available/15-fastcgi-php.conf dest=/etc/lighttpd/conf-enabled/15-fastcgi-php.conf state=link
