@@ -4,7 +4,7 @@
 
 - hosts: localhost
   user: root
-  connection: ssh # or paramiko
+  connection: local # or ssh or paramiko
 
   vars:
     hostname: $inventory_hostname
